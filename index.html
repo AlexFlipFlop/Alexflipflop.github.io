@@ -1,0 +1,111 @@
+<html> <!-- The start of your HTML File -->
+
+<head> <!-- Meta/HTML Tags that will come, but not visible on the website (Title, Script, CSS, etc) -->
+
+<style>
+    @media only screen and (max-width: 550px) {
+        img{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        top: 70px;
+        left: 55%;
+        margin-top: -10px;
+        margin-left: -30px;
+        }
+        }
+body{
+    background: #272727;
+    font-family: Arial;
+    color: white;
+    margin: 0;    
+}
+a {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition: 1s;
+    transition: 0.5s;
+    position: relative;
+    position: absolute; 
+    top: 71px; 
+    left: 285px;
+    font-family: Arial;
+     color: black;
+}
+a:hover{
+     transform: translate(10px);
+}
+
+.infobox{
+    background: url('http://festive.tf/assets/images/donatebg.jpg') center;
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+    top: 0; 
+    left: 0;
+}
+p{ 
+    position: relative;
+    position: absolute; 
+    top: 80px; 
+    left:285px;
+}
+
+img{border: 5px solid #fff;
+     border-radius: 20px;
+      box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+    height: 184px;
+    position: relative;
+    width: 184px;
+    position: absolute; 
+    top: 40px; 
+    left: 70px;
+    transition: 0.5s;
+    animation-name: slidein1;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;}
+.infoboxheader{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 24px;
+   position: relative;
+    position: absolute; 
+    animation-name: slidein2;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    top: 30px; 
+    left: 285px;
+}
+img:hover{
+    top:15;
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+@keyframes slidein1 {
+    from   {top: 100px;}
+    to     {top: 40px;}
+}
+@keyframes slidein2 {
+    from   {left: 150px;}
+    to     {left: 285px;}
+}
+</style>
+<body>
+    <div class="infobox">
+        <h1 class="infoboxheader">Festive.tf | Alex</h1>
+        <a href="#">Steam Profile</a>
+        <p>Age: 15
+            <br>Real name: Alexander
+            
+        </p>
+         </div>
+            <img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/a7/a72150c5da289ff1088354e8064e7c34b7e425f8_full.jpg"></img>
+       
+        
+       
+</body> <!-- End of body -->
+
+</html> <!-- End of html -->
