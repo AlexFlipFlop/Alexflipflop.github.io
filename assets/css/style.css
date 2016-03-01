@@ -1,44 +1,51 @@
-body {
+body{
     background-color: rgb(50, 50, 50);
     color: white;
     text-align: center;
 }
-#Website_Title {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    position: relative;
+#title{
     text-align: center;
-    font-weight: 200;
-    animation: TSlidein 1.5s;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    opacity: 0;
+    animation: HeaderSlideIn 1s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes TSlidein {
-    0% {opacity: 0;top:135px;}
-    100% {top:0px; opacity: 1;}
+@keyframes HeaderSlideIn{
+    0%{top: 150px; opacity: 0;}
+    100%{top: 0px; opacity: 1}
 }
-#hitlerftw{
+#profileimg{
+    width: 184px;
+    height: 184px;
     position: relative;
-    text-align: center;
     opacity: 0;
-    animation: HSlidein 1s;
-    animation-delay: 1.7s;
+    animation: ImgZoomIn 1s;
+    animation-delay: 0.05s;
     animation-fill-mode: forwards;
+    border: 5px solid #fff;
+    border-radius: 100px;
+    box-shadow: 5px black;
 }
-@keyframes HSlidein {
-    0% {opacity: 0;left: 100%;}
-    100% {left:0%; opacity: 1;}
+@keyframes ImgZoomIn{
+    0%{transform: scale(0); opacity: 0}
+    100%{transform: scale(1); opacity: 1}
 }
-#style{
+#username{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-weight: normal;
+    font-size: 50px;
     position: relative;
-    text-align: center;
     opacity: 0;
-    animation: HSlide 1s;
+    
+    animation-name: usernamein;
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
 }
-@keyframes HSlide {
-    0% {opacity: 0;right: 100%;}
-    100% {right:0%; opacity: 1;}
-}
+@keyframes usernamein{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
