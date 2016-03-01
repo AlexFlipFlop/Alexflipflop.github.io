@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+}
+#Website_Title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    font-weight: 200;
+    animation: TSlidein 1.5s;
+}
+
+@keyframes TSlidein {
+    0% {opacity: 0;top:135px;}
+    100% {top:0px; opacity: 1;}
+}
+#hitlerftw{
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    animation: HSlidein 1s;
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes HSlidein {
+    0% {opacity: 0;left: 100%;}
+    100% {left:0%; opacity: 1;}
+}
+#style{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    animation: HSlide 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes HSlide {
+    0% {opacity: 0;right: 100%;}
+    100% {right:0%; opacity: 1;}
+}
